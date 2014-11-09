@@ -1,8 +1,0 @@
-<!DOCTYPE RCC>
-<RCC version="1.0">
-<qresource>
-<file>assets/main.qml</file>
-<file>assets/jsconsole.qml</file>
-<file>assets/ajaxtool.qml</file>
-</qresource>
-</RCC>
