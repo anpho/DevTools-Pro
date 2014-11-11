@@ -4,7 +4,7 @@
 			icon="asset:///icon/console.png" version="2.0"></item>
 		<item title="Ajax Tool" target="ajaxtool.qml" enabled="true"
 			icon="asset:///icon/ajax.png" version="1.0"></item>
-		<item title="Regular Expression Test Tool" target="regexp.qml" enabled="true"
+		<item title="Regular Expression Tool" target="regexp.qml" enabled="true"
 			icon="asset:///icon/ic_rename.png" version="1.0"></item>
 	</header>
 </root>

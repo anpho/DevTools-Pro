@@ -15,20 +15,25 @@
  */
 
 import bb.cascades 1.0
+import bb.device 1.2
+
 NavigationPane {
-    onPushTransitionEnded: {
-        Application.menuEnabled = false
-    }
+    property int widthNow: DisplayInfo.width
     onCreationCompleted: {
         Application.menuEnabled = true;
     }
     id: nav
     Menu.definition: MenuDefinition {
         helpAction: HelpActionItem {
-
+            onTriggered: {
+                nav.push(Qt.createComponent("about.qml").createObject(nav))
+            }
         }
-        settingsAction: SettingsActionItem {
 
+        settingsAction: SettingsActionItem {
+            onTriggered: {
+                nav.push(Qt.createComponent("settings.qml").createObject(nav))
+            }
         }
     }
     Page {
@@ -48,25 +53,61 @@ NavigationPane {
                     console.log("Pushing:" + item.target)
                     var t = Qt.createComponent(item.target).createObject(nav);
                     nav.push(t)
+                    Application.menuEnabled = false;
                 }
                 listItemComponents: [
                     ListItemComponent {
                         type: "item"
-                        StandardListItem {
-                            title: ListItemData.title
-                            //                            status: ListItemData.version
-                            imageSource: ListItemData.icon
-                            imageSpaceReserved: true
+                        Container {
+                            horizontalAlignment: HorizontalAlignment.Center
+                            verticalAlignment: VerticalAlignment.Center
+                            ImageView {
+                                imageSource: ListItemData.icon
+                                preferredWidth: 120.0
+                                preferredHeight: 120.0
+                                horizontalAlignment: HorizontalAlignment.Center
+
+                            }
+                            Label {
+                                text: ListItemData.title
+                                horizontalAlignment: HorizontalAlignment.Center
+                                multiline: true
+                                textStyle.textAlign: TextAlign.Center
+                            }
                         }
+                        //                        StandardListItem {
+                        //                            title: ListItemData.title
+                        //                            //                            status: ListItemData.version
+                        //                            imageSource: ListItemData.icon
+                        //                            imageSpaceReserved: true
+                        //                        }
                     }
                 ]
+                layout: GridListLayout {
+                    id: grid
+                    headerMode: ListHeaderMode.Standard
+                    columnCount: (widthNow <= 768) ? 2 : 3
+
+                    cellAspectRatio: 1.5
+
+                }
             }
 
         }
-
     }
     onPopTransitionEnded: {
         page.destroy();
-        Application.menuEnabled = true
+        Application.menuEnabled = true;
     }
+    attachedObjects: [
+        OrientationHandler {
+            onOrientationChanged: {
+                if (orientation == UIOrientation.Landscape) {
+                    widthNow = DisplayInfo.height
+                } else {
+                    widthNow = DisplayInfo.width
+                }
+            }
+        }
+    ]
 }

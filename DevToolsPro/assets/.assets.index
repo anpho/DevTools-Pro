@@ -1,5 +1,6 @@
 1
-141
+144
+about.qml
 ajaxtool.qml
 features.xml
 formatter/base.js
@@ -130,6 +131,7 @@ icon/ic_view_list.png
 icon/ic_view_post.png
 icon/ic_zoom_in.png
 icon/ic_zoom_out.png
+icon.png
 jsConsole/libs/backbone-localStorage.min.js
 jsConsole/libs/backbone.min.js
 jsConsole/libs/jquery-1.11.1.js
@@ -141,3 +143,4 @@ jsconsole.qml
 main.qml
 regexp/regexp.html
 regexp.qml
+settings.qml

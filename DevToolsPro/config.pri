@@ -36,6 +36,7 @@ simulator {
 
 config_pri_assets {
     OTHER_FILES += \
+        $$quote($$BASEDIR/assets/about.qml) \
         $$quote($$BASEDIR/assets/ajaxtool.qml) \
         $$quote($$BASEDIR/assets/features.xml) \
         $$quote($$BASEDIR/assets/formatter/base.js) \
@@ -166,6 +167,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/icon/ic_view_post.png) \
         $$quote($$BASEDIR/assets/icon/ic_zoom_in.png) \
         $$quote($$BASEDIR/assets/icon/ic_zoom_out.png) \
+        $$quote($$BASEDIR/assets/icon.png) \
         $$quote($$BASEDIR/assets/jsConsole/libs/backbone-localStorage.min.js) \
         $$quote($$BASEDIR/assets/jsConsole/libs/backbone.min.js) \
         $$quote($$BASEDIR/assets/jsConsole/libs/jquery-1.11.1.js) \
@@ -176,7 +178,8 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/jsconsole.qml) \
         $$quote($$BASEDIR/assets/main.qml) \
         $$quote($$BASEDIR/assets/regexp/regexp.html) \
-        $$quote($$BASEDIR/assets/regexp.qml)
+        $$quote($$BASEDIR/assets/regexp.qml) \
+        $$quote($$BASEDIR/assets/settings.qml)
 }
 
 config_pri_source_group1 {

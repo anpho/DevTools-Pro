@@ -109,7 +109,7 @@ Page {
                     textStyle.base: tips.style
                     multiline: true
                     visible: parameters.focused
-                    text: qsTr("Keep all parameters in one line, Format:\r\na=1&b=2&c=3")
+                    text: qsTr("Keep all parameters in one line, Format:a=1&b=2&c=3")
                 }
                 TextArea {
                     hintText: qsTr("For example: a=1&b=2")
@@ -126,7 +126,7 @@ Page {
                 Label {
                     textStyle.base: tips.style
                     multiline: true
-                    text: qsTr("Seperate each name/value pairs in lines, one pair per line, Format:\r\nname=value")
+                    text: qsTr("Seperate each name/value pairs in lines, one pair per line, Format:name=value")
                     visible: headers.focused
                 }
                 TextArea {

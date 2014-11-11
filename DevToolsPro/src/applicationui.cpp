@@ -21,9 +21,9 @@
 #include <bb/cascades/AbstractPane>
 #include <bb/cascades/LocaleHandler>
 #include <bb/system/Clipboard>
+#include <bb/device/DisplayInfo>
 
 using namespace bb::cascades;
-
 ApplicationUI::ApplicationUI() :
         QObject()
 {
@@ -46,6 +46,17 @@ ApplicationUI::ApplicationUI() :
     // to ensure the document gets destroyed properly at shut down.
     QmlDocument *qml = QmlDocument::create("asset:///main.qml").parent(this);
     qml->setContextProperty("_app", this);
+
+    bb::device::DisplayInfo display;
+    int width = display.pixelSize().width();
+    int height = display.pixelSize().height();
+
+    QDeclarativePropertyMap* displayProperties = new QDeclarativePropertyMap;
+    displayProperties->insert("width", QVariant(width));
+    displayProperties->insert("height", QVariant(height));
+
+    qml->setContextProperty("DisplayInfo", displayProperties);
+
     // Create root object for the UI
     AbstractPane *root = qml->createRootObject<AbstractPane>();
 

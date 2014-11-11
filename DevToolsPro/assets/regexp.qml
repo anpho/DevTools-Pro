@@ -114,7 +114,7 @@ Page {
             title: qsTr("Match")
             enabled: rpattern.text.length > 0 && rtext.text.length > 0
             imageSource: "asset:///icon/ic_check_spelling.png"
-            ActionBar.placement: ActionBarPlacement.OnBar
+            ActionBar.placement: ActionBarPlacement.Signature ||ActionBarPlacement.OnBar
             onTriggered: {
 
                 var modifiers = "";
@@ -140,7 +140,7 @@ Page {
             leftPadding: 10.0
             rightPadding: 10.0
             Header {
-                title: qsTr("Regular Expression Test Tool")
+                title: qsTr("Regular Expression Tool")
             }
             Label {
                 text: qsTr("Your Regular Expresson Pattern:")

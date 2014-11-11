@@ -22,11 +22,17 @@
 #include <QTranslator>
 
 #include <Qt/qdeclarativedebug.h>
+#include "AppSettings.hpp"
 
 using namespace bb::cascades;
 
 Q_DECL_EXPORT int main(int argc, char **argv)
 {
+    QString theme = AppSettings::getValueFor("use_dark_theme", "");
+    if (theme.length() > 0) {
+        qputenv("CASCADES_THEME", theme.toUtf8());
+    }
+
     Application app(argc, argv);
 
     // Create the Application UI object, this is where the main.qml file

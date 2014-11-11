@@ -2,6 +2,34 @@
 <!DOCTYPE TS>
 <TS version="2.0">
 <context>
+    <name>about</name>
+    <message>
+        <location filename="../assets/about.qml" line="15"/>
+        <source>about</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/about.qml" line="19"/>
+        <source>Email Me</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/about.qml" line="29"/>
+        <source>App Version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/about.qml" line="39"/>
+        <source>DevTools Pro</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/about.qml" line="46"/>
+        <source>BlackBerry OS: </source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ajaxtool</name>
     <message>
         <location filename="../assets/ajaxtool.qml" line="11"/>
@@ -55,18 +83,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/ajaxtool.qml" line="112"/>
-        <source>Keep all parameters in one line, Format:
-a=1&amp;b=2&amp;c=3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../assets/ajaxtool.qml" line="129"/>
-        <source>Seperate each name/value pairs in lines, one pair per line, Format:
-name=value</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../assets/ajaxtool.qml" line="250"/>
         <source>Export</source>
         <translation type="unfinished"></translation>
@@ -87,8 +103,18 @@ name=value</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../assets/ajaxtool.qml" line="112"/>
+        <source>Keep all parameters in one line, Format:a=1&amp;b=2&amp;c=3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../assets/ajaxtool.qml" line="123"/>
         <source>HTTP Headers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/ajaxtool.qml" line="129"/>
+        <source>Seperate each name/value pairs in lines, one pair per line, Format:name=value</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -225,7 +251,7 @@ name=value</source>
 <context>
     <name>main</name>
     <message>
-        <location filename="../assets/main.qml" line="36"/>
+        <location filename="../assets/main.qml" line="41"/>
         <source>Dev Tools Pro</source>
         <translation type="unfinished"></translation>
     </message>
@@ -271,7 +297,7 @@ name=value</source>
     </message>
     <message>
         <location filename="../assets/regexp.qml" line="143"/>
-        <source>Regular Expression Test Tool</source>
+        <source>Regular Expression Tool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -342,6 +368,24 @@ name=value</source>
     <message>
         <location filename="../assets/regexp.qml" line="375"/>
         <source>Clear</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>settings</name>
+    <message>
+        <location filename="../assets/settings.qml" line="8"/>
+        <source>App Theme</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/settings.qml" line="19"/>
+        <source>Use Dark Theme</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/settings.qml" line="39"/>
+        <source>Changing theme requires app restart.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
