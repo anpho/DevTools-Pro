@@ -26,7 +26,7 @@ Page {
         ActionItem {
             title: qsTr("Run")
             imageSource: "asset:///icon/ic_play.png"
-            ActionBar.placement: ActionBarPlacement.Signature || ActionBarPlacement.OnBar
+            ActionBar.placement: ActionBarPlacement.OnBar
             onTriggered: {
                 if (blockedit) {
                     if (binp.text === ":clear") {
@@ -250,7 +250,6 @@ Page {
             visible: blockedit
             verticalAlignment: VerticalAlignment.Fill
             horizontalAlignment: HorizontalAlignment.Fill
-            accessibilityMode: A11yMode.Default
             Header {
                 title: qsTr("Block Edit Mode")
             }
@@ -274,7 +273,17 @@ Page {
                 ]
                 contextActions: [
                     ActionSet {
-                        actions: [ actionClearCodes, actionimport, actionexport, actiontoggle, actiontutorial ]
+                        actions: [
+                            ActionItem {
+                                title: qsTr("Toggle Block Editor")
+                                imageSource: "asset:///icon/ic_notes.png"
+                                ActionBar.placement: ActionBarPlacement.InOverflow
+                                onTriggered: {
+                                    blockedit = ! blockedit
+                                    blocktoast.show();
+                                }
+                            }
+                        ]
                     }
 
                 ]

@@ -1,0 +1,10 @@
+<root>
+	<header title="Javascript 工具">
+		<item title="Javascript 终端" target="jsconsole.qml" enabled="true"
+			icon="asset:///icon/console2.png" version="2.0"></item>
+		<item title="Ajax 调试器" target="ajaxtool.qml" enabled="true"
+			icon="asset:///icon/ajax2.png" version="1.0"></item>
+		<item title="正则表达式" target="regexp.qml" enabled="true"
+			icon="asset:///icon/ic_rename2.png" version="1.0"></item>
+	</header>
+</root>

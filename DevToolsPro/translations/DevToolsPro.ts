@@ -204,6 +204,7 @@
     </message>
     <message>
         <location filename="../assets/jsconsole.qml" line="131"/>
+        <location filename="../assets/jsconsole.qml" line="278"/>
         <source>Toggle Block Editor</source>
         <translation type="unfinished"></translation>
     </message>
@@ -238,12 +239,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/jsconsole.qml" line="255"/>
+        <location filename="../assets/jsconsole.qml" line="254"/>
         <source>Block Edit Mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/jsconsole.qml" line="265"/>
+        <location filename="../assets/jsconsole.qml" line="264"/>
         <source>Type / Import / Paste Javascript Here.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -253,6 +254,11 @@
     <message>
         <location filename="../assets/main.qml" line="41"/>
         <source>Dev Tools Pro</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/main.qml" line="49"/>
+        <source>features.xml</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -276,97 +282,97 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="86"/>
+        <location filename="../assets/regexp.qml" line="85"/>
         <source>Match Not Found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="89"/>
+        <location filename="../assets/regexp.qml" line="88"/>
         <source>http://www.w3schools.com/jsref/jsref_obj_regexp.asp</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="114"/>
+        <location filename="../assets/regexp.qml" line="113"/>
         <source>Match</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="130"/>
+        <location filename="../assets/regexp.qml" line="129"/>
         <source>RegExp Reference</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="143"/>
+        <location filename="../assets/regexp.qml" line="142"/>
         <source>Regular Expression Tool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="146"/>
+        <location filename="../assets/regexp.qml" line="145"/>
         <source>Your Regular Expresson Pattern:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="169"/>
+        <location filename="../assets/regexp.qml" line="168"/>
         <source>RegExp Pattern</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="191"/>
+        <location filename="../assets/regexp.qml" line="190"/>
         <source>Regular Expression Attributes:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="202"/>
+        <location filename="../assets/regexp.qml" line="201"/>
         <source>Case-insensitive matching</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="224"/>
+        <location filename="../assets/regexp.qml" line="223"/>
         <source>Global matching</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="246"/>
+        <location filename="../assets/regexp.qml" line="245"/>
         <source>Multiline matching</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="262"/>
+        <location filename="../assets/regexp.qml" line="261"/>
         <source>Text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="268"/>
+        <location filename="../assets/regexp.qml" line="267"/>
         <source>Type, paste, or import text by long press.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="273"/>
+        <location filename="../assets/regexp.qml" line="272"/>
         <source>Load from URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="282"/>
+        <location filename="../assets/regexp.qml" line="281"/>
         <source>Load From URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="286"/>
+        <location filename="../assets/regexp.qml" line="285"/>
         <source>This will load the content of the URL you specified here:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="300"/>
+        <location filename="../assets/regexp.qml" line="299"/>
         <source>Invalid URL, Request dismissed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="355"/>
+        <location filename="../assets/regexp.qml" line="354"/>
         <source>Load from File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="375"/>
+        <location filename="../assets/regexp.qml" line="374"/>
         <source>Clear</source>
         <translation type="unfinished"></translation>
     </message>
@@ -374,18 +380,24 @@
 <context>
     <name>settings</name>
     <message>
-        <location filename="../assets/settings.qml" line="8"/>
-        <source>App Theme</source>
+        <location filename="../assets/settings.qml" line="15"/>
+        <source>Theme Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../assets/settings.qml" line="19"/>
+        <location filename="../assets/settings.qml" line="29"/>
         <source>Use Dark Theme</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/settings.qml" line="39"/>
-        <source>Changing theme requires app restart.</source>
+        <location filename="../assets/settings.qml" line="37"/>
+        <source>This will apply immediately on BlackBerry OS 10.3 and above.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/settings.qml" line="43"/>
+        <source>This will apply when app restarts.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

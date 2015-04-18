@@ -4,10 +4,22 @@ BASEDIR = $$quote($$_PRO_FILE_PWD_)
 device {
     CONFIG(debug, debug|release) {
         profile {
+            INCLUDEPATH += $$quote(${QNX_TARGET}/usr/include/bb/platform)
+
+            DEPENDPATH += $$quote(${QNX_TARGET}/usr/include/bb/platform)
+
+            LIBS += -lbbplatform
+
             CONFIG += \
                 config_pri_assets \
                 config_pri_source_group1
         } else {
+            INCLUDEPATH += $$quote(${QNX_TARGET}/usr/include/bb/platform)
+
+            DEPENDPATH += $$quote(${QNX_TARGET}/usr/include/bb/platform)
+
+            LIBS += -lbbplatform
+
             CONFIG += \
                 config_pri_assets \
                 config_pri_source_group1
@@ -17,6 +29,12 @@ device {
 
     CONFIG(release, debug|release) {
         !profile {
+            INCLUDEPATH += $$quote(${QNX_TARGET}/usr/include/bb/platform)
+
+            DEPENDPATH += $$quote(${QNX_TARGET}/usr/include/bb/platform)
+
+            LIBS += -lbbplatform
+
             CONFIG += \
                 config_pri_assets \
                 config_pri_source_group1
@@ -27,6 +45,12 @@ device {
 simulator {
     CONFIG(debug, debug|release) {
         !profile {
+            INCLUDEPATH += $$quote(${QNX_TARGET}/usr/include/bb/platform)
+
+            DEPENDPATH += $$quote(${QNX_TARGET}/usr/include/bb/platform)
+
+            LIBS += -lbbplatform
+
             CONFIG += \
                 config_pri_assets \
                 config_pri_source_group1
@@ -38,13 +62,16 @@ config_pri_assets {
     OTHER_FILES += \
         $$quote($$BASEDIR/assets/about.qml) \
         $$quote($$BASEDIR/assets/ajaxtool.qml) \
+        $$quote($$BASEDIR/assets/features-zh-cn.xml) \
         $$quote($$BASEDIR/assets/features.xml) \
         $$quote($$BASEDIR/assets/formatter/base.js) \
         $$quote($$BASEDIR/assets/formatter/formatter.html) \
         $$quote($$BASEDIR/assets/formatter/htmlformat.js) \
         $$quote($$BASEDIR/assets/formatter/jsformat.js) \
         $$quote($$BASEDIR/assets/icon/ajax.png) \
+        $$quote($$BASEDIR/assets/icon/ajax2.png) \
         $$quote($$BASEDIR/assets/icon/console.png) \
+        $$quote($$BASEDIR/assets/icon/console2.png) \
         $$quote($$BASEDIR/assets/icon/format.png) \
         $$quote($$BASEDIR/assets/icon/ic_add.png) \
         $$quote($$BASEDIR/assets/icon/ic_add_entry.png) \
@@ -135,6 +162,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/icon/ic_properties.png) \
         $$quote($$BASEDIR/assets/icon/ic_reload.png) \
         $$quote($$BASEDIR/assets/icon/ic_rename.png) \
+        $$quote($$BASEDIR/assets/icon/ic_rename2.png) \
         $$quote($$BASEDIR/assets/icon/ic_reply.png) \
         $$quote($$BASEDIR/assets/icon/ic_reply_all.png) \
         $$quote($$BASEDIR/assets/icon/ic_rotate.png) \
@@ -192,6 +220,8 @@ config_pri_source_group1 {
         $$quote($$BASEDIR/src/AppSettings.hpp) \
         $$quote($$BASEDIR/src/applicationui.hpp)
 }
+
+INCLUDEPATH += $$quote($$BASEDIR/src)
 
 CONFIG += precompile_header
 

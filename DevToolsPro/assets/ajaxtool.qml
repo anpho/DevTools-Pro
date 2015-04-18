@@ -6,7 +6,7 @@ Page {
     actionBarVisibility: ChromeVisibility.Visible
     actions: [
         ActionItem {
-            ActionBar.placement:  ActionBarPlacement.Signature ||ActionBarPlacement.OnBar
+            ActionBar.placement:  ActionBarPlacement.OnBar
             imageSource: "asset:///icon/ic_play.png"
             title: qsTr("Send")
             onTriggered: {
@@ -244,7 +244,7 @@ Page {
                                         tabsize: 2
                                     }))
                         }
-                        ActionBar.placement:  ActionBarPlacement.Signature ||ActionBarPlacement.OnBar
+                        ActionBar.placement:  ActionBarPlacement.OnBar
                     },
                     ActionItem {
                         title: qsTr("Export")

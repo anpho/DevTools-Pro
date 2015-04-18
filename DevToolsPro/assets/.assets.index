@@ -1,14 +1,17 @@
 1
-144
+148
 about.qml
 ajaxtool.qml
+features-zh-cn.xml
 features.xml
 formatter/base.js
 formatter/formatter.html
 formatter/htmlformat.js
 formatter/jsformat.js
 icon/ajax.png
+icon/ajax2.png
 icon/console.png
+icon/console2.png
 icon/format.png
 icon/ic_add.png
 icon/ic_add_entry.png
@@ -99,6 +102,7 @@ icon/ic_previous.png
 icon/ic_properties.png
 icon/ic_reload.png
 icon/ic_rename.png
+icon/ic_rename2.png
 icon/ic_reply.png
 icon/ic_reply_all.png
 icon/ic_rotate.png

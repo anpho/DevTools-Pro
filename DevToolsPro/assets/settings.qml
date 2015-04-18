@@ -1,44 +1,49 @@
 import bb.cascades 1.2
+import bb.platform 1.2
 
 Page {
     property string use_dark_theme: "use_dark_theme"
+    attachedObjects: [
+        PlatformInfo {
+            id: pi
+        }
+    ]
     Container {
-
+        leftPadding: 10.0
+        rightPadding: 10.0
         Header {
-            title: qsTr("App Theme")
+            title: qsTr("Theme Settings")
         }
-        Container {
-            layout: DockLayout {
-            }
-            horizontalAlignment: HorizontalAlignment.Fill
-            topPadding: 20.0
-            leftPadding: 20.0
-            rightPadding: 20.0
-            bottomPadding: 20.0
-            Label {
-                text: qsTr("Use Dark Theme")
-                horizontalAlignment: HorizontalAlignment.Left
-                verticalAlignment: VerticalAlignment.Center
-            }
-            ToggleButton {
-                horizontalAlignment: HorizontalAlignment.Right
-                verticalAlignment: VerticalAlignment.Center
-                checked: (_app.getValue(use_dark_theme, (Application.themeSupport.theme.colorTheme.style === VisualStyle.Bright ? "bright" : "dark")) === "dark")
-                onCheckedChanged: {
-                    checked ? _app.setValue(use_dark_theme, "dark") : _app.setValue(use_dark_theme, "bright")
-                }
+        CheckBox {
+            visible: pi.osVersion > "10.3.0"
+            text: qsTr("Use Dark Theme")
+            checked: Application.themeSupport.theme.colorTheme.style === VisualStyle.Dark
+            onCheckedChanged: {
+                checked ? _app.setValue(use_dark_theme, "dark") : _app.setValue(use_dark_theme, "bright")
+                console.log(pi.osVersion);
+                Application.themeSupport.setVisualStyle(checked ? VisualStyle.Dark : VisualStyle.Bright);
             }
         }
-        Container {
-            topPadding: 10.0
-            leftPadding: 20.0
-            rightPadding: 20.0
-            bottomPadding: 20.0
-            Label {
-                textStyle.fontSize: FontSize.Small
-                text: qsTr("Changing theme requires app restart.")
-                multiline: true
+        CheckBox {
+            visible: pi.osVersion < "10.3.0"
+            text: qsTr("Use Dark Theme")
+            checked: _app.getValue(use_dark_theme, "dark") == "dark"
+            onCheckedChanged: {
+                checked ? _app.setValue(use_dark_theme, "dark") : _app.setValue(use_dark_theme, "bright")
+                console.log(pi.osVersion);
             }
+        }
+        Label {
+            text: qsTr("This will apply immediately on BlackBerry OS 10.3 and above.")
+            multiline: true
+            visible: pi.osVersion > "10.3.0"
+            textStyle.fontSize: FontSize.XSmall
+        }
+        Label {
+            text: qsTr("This will apply when app restarts.")
+            multiline: true
+            visible: pi.osVersion < "10.3.0"
+            textStyle.fontSize: FontSize.XSmall
         }
     }
 }

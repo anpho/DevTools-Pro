@@ -74,7 +74,6 @@ Page {
                         dataModel: ArrayDataModel {
                             id: adm
                         }
-                        bufferedScrollingEnabled: true
                     }
                 }
             }
@@ -114,7 +113,7 @@ Page {
             title: qsTr("Match")
             enabled: rpattern.text.length > 0 && rtext.text.length > 0
             imageSource: "asset:///icon/ic_check_spelling.png"
-            ActionBar.placement: ActionBarPlacement.Signature ||ActionBarPlacement.OnBar
+            ActionBar.placement: ActionBarPlacement.OnBar
             onTriggered: {
 
                 var modifiers = "";

@@ -18,7 +18,7 @@ Page {
         InvokeActionItem {
             title: qsTr("Email Me")
             imageSource: "asset:///icon/ic_email.png"
-            ActionBar.placement: ActionBarPlacement.Signature ||ActionBarPlacement.OnBar
+            ActionBar.placement: ActionBarPlacement.OnBar
             query.invokeTargetId: "sys.pim.uib.email.hybridcomposer"
             query.invokeActionId: "bb.action.SENDEMAIL"
             query.uri: "mailto:anphorea@gmail.com"

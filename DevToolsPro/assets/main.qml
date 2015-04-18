@@ -46,7 +46,7 @@ NavigationPane {
             ListView {
                 id: mainlist
                 dataModel: XmlDataModel {
-                    source: "features.xml"
+                    source: qsTr("features.xml")
                 }
                 onTriggered: {
                     var item = dataModel.data(indexPath);

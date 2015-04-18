@@ -214,6 +214,7 @@ a=1&amp;b=2&amp;c=3</translation>
     </message>
     <message>
         <location filename="../assets/jsconsole.qml" line="131"/>
+        <location filename="../assets/jsconsole.qml" line="278"/>
         <source>Toggle Block Editor</source>
         <translation>切换编辑模式</translation>
     </message>
@@ -248,12 +249,12 @@ a=1&amp;b=2&amp;c=3</translation>
         <translation>在此处输入Javascript代码</translation>
     </message>
     <message>
-        <location filename="../assets/jsconsole.qml" line="255"/>
+        <location filename="../assets/jsconsole.qml" line="254"/>
         <source>Block Edit Mode</source>
         <translation>多行编辑模式</translation>
     </message>
     <message>
-        <location filename="../assets/jsconsole.qml" line="265"/>
+        <location filename="../assets/jsconsole.qml" line="264"/>
         <source>Type / Import / Paste Javascript Here.</source>
         <translation>在些处输入 / 导入 / 粘贴 Javascript代码。</translation>
     </message>
@@ -264,6 +265,11 @@ a=1&amp;b=2&amp;c=3</translation>
         <location filename="../assets/main.qml" line="41"/>
         <source>Dev Tools Pro</source>
         <translation>Dev Tools 专业版</translation>
+    </message>
+    <message>
+        <location filename="../assets/main.qml" line="49"/>
+        <source>features.xml</source>
+        <translation>features-zh-cn.xml</translation>
     </message>
 </context>
 <context>
@@ -286,97 +292,97 @@ a=1&amp;b=2&amp;c=3</translation>
         <translation>正则表达式</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="86"/>
+        <location filename="../assets/regexp.qml" line="85"/>
         <source>Match Not Found</source>
         <translation>未发现匹配项</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="89"/>
+        <location filename="../assets/regexp.qml" line="88"/>
         <source>http://www.w3schools.com/jsref/jsref_obj_regexp.asp</source>
         <translation>http://www.w3school.com.cn/js/js_obj_regexp.asp</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="114"/>
+        <location filename="../assets/regexp.qml" line="113"/>
         <source>Match</source>
         <translation>匹配</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="130"/>
+        <location filename="../assets/regexp.qml" line="129"/>
         <source>RegExp Reference</source>
         <translation>正则表达式参考</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="143"/>
+        <location filename="../assets/regexp.qml" line="142"/>
         <source>Regular Expression Tool</source>
         <translation>正则表达式测试工具</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="146"/>
+        <location filename="../assets/regexp.qml" line="145"/>
         <source>Your Regular Expresson Pattern:</source>
         <translation>输入正则表达式：</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="169"/>
+        <location filename="../assets/regexp.qml" line="168"/>
         <source>RegExp Pattern</source>
         <translation>检索模式</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="191"/>
+        <location filename="../assets/regexp.qml" line="190"/>
         <source>Regular Expression Attributes:</source>
         <translation>修饰符：</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="202"/>
+        <location filename="../assets/regexp.qml" line="201"/>
         <source>Case-insensitive matching</source>
         <translation>忽略大小写</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="224"/>
+        <location filename="../assets/regexp.qml" line="223"/>
         <source>Global matching</source>
         <translation>全局匹配</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="246"/>
+        <location filename="../assets/regexp.qml" line="245"/>
         <source>Multiline matching</source>
         <translation>多行匹配</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="262"/>
+        <location filename="../assets/regexp.qml" line="261"/>
         <source>Text</source>
         <translation>要检索的文本</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="268"/>
+        <location filename="../assets/regexp.qml" line="267"/>
         <source>Type, paste, or import text by long press.</source>
         <translation>在此输入、粘贴或通过长按来导入文本或URL。</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="273"/>
+        <location filename="../assets/regexp.qml" line="272"/>
         <source>Load from URL</source>
         <translation>从URL导入</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="282"/>
+        <location filename="../assets/regexp.qml" line="281"/>
         <source>Load From URL</source>
         <translation>从URL导入</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="286"/>
+        <location filename="../assets/regexp.qml" line="285"/>
         <source>This will load the content of the URL you specified here:</source>
         <translation>从指定的URL加载内容：</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="300"/>
+        <location filename="../assets/regexp.qml" line="299"/>
         <source>Invalid URL, Request dismissed.</source>
         <translation>URL非法，操作取消。</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="355"/>
+        <location filename="../assets/regexp.qml" line="354"/>
         <source>Load from File</source>
         <translation>从文件加载</translation>
     </message>
     <message>
-        <location filename="../assets/regexp.qml" line="375"/>
+        <location filename="../assets/regexp.qml" line="374"/>
         <source>Clear</source>
         <translation>清空</translation>
     </message>
@@ -384,19 +390,33 @@ a=1&amp;b=2&amp;c=3</translation>
 <context>
     <name>settings</name>
     <message>
-        <location filename="../assets/settings.qml" line="8"/>
         <source>App Theme</source>
+        <translation type="obsolete">应用主题</translation>
+    </message>
+    <message>
+        <location filename="../assets/settings.qml" line="15"/>
+        <source>Theme Settings</source>
         <translation>应用主题</translation>
     </message>
     <message>
         <location filename="../assets/settings.qml" line="19"/>
+        <location filename="../assets/settings.qml" line="29"/>
         <source>Use Dark Theme</source>
         <translation>使用暗色主题</translation>
     </message>
     <message>
-        <location filename="../assets/settings.qml" line="39"/>
+        <location filename="../assets/settings.qml" line="37"/>
+        <source>This will apply immediately on BlackBerry OS 10.3 and above.</source>
+        <translation>在10.3以上的系统中，此项更改即时生效。</translation>
+    </message>
+    <message>
+        <location filename="../assets/settings.qml" line="43"/>
+        <source>This will apply when app restarts.</source>
+        <translation>主题变更将在下次应用启动时生效。</translation>
+    </message>
+    <message>
         <source>Changing theme requires app restart.</source>
-        <translation>应用主题的变更要到下次应用启动时才能生效。</translation>
+        <translation type="obsolete">应用主题的变更要到下次应用启动时才能生效。</translation>
     </message>
 </context>
 </TS>
